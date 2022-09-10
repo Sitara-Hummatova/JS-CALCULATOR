@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+body{
+
+    background: linear-gradient(rgba(170, 126, 161, 0.568),rgba(32, 2, 2, 0.3));
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+}
+
+
+
+.calculator{
+    display: flex;
+    width: 470px;
+    flex-direction:column;
+    gap:20px;
+    padding: 25px;
+    background-color: #333;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 5px 9px rgb(32, 25, 30);
+    
+}
+#screen{
+    text-align: right;
+    background: #c0b518;
+    border:2px solid #e6e6e6;
+    line-height: 50px;
+    font-size: 40px;
+    height: 100px;
+    padding: 20px 10px;
+    border-radius: 35px;
+    box-shadow: 2px 2px 2px rgb(102, 99, 101),
+          inset 2px 2px 2px rgb(102, 99, 101);
+    
+}
+
+.buttons{
+        display: grid;
+        gap: 7px;
+        grid-template-columns: repeat(4,100px);
+    }
+    .button{
+        border:1px solid #e6e6e6;
+        line-height: 60px;
+        font-weight: bold;
+        color: #ebe72a;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 23px;
+        cursor: pointer;
+        box-shadow: inset 3px 3px 3px rgb(17, 16, 17),
+            inset -2px -2px -2px rgb(102, 99, 101);}
+
+    #equal{
+      
+        background-color: #c0b518;
+        color: #fff;
+       
+
+    }
+    
+    #equal:hover,
+    #operator:hover{
+        background-color: rgb(224, 212, 35);
+        color: #e6e6e6;
+    }
+    
+    .button:hover{
+        background-color: #888687;
+        color : black;
+        transition: 2 ease-in;
+        box-shadow: inset 3px 3px 3px rgb(17, 16, 17)
+       
+    }
+   
+
+    #screen:hover{
+        box-shadow: inset 3px 3px 3px rgb(17, 16, 17);
+        background-color: rgb(224, 212, 35);
+    }
+
+    .on-off{
+        background: #ff4911;
+    }
